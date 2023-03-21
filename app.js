@@ -5,6 +5,7 @@ const dbConnect = require('./config/mongo.js')
 const app = express();
 
 app.use(cors());
+app.use(express.json());//se prepara para que express reciba informacion a traves de un post
 
 const port = process.env.PORT || 3000;
 //console.log(process.env.PORT);
